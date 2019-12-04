@@ -58,7 +58,7 @@ IP ranges can be whitelisted via ``ALLOWED_IP_RANGES``, which is either a list o
     export ALLOWED_IP_RANGES='192.168.0.0/8, 127.0.0.0/2'
     
     # in settings.py
-    ALLOWED_IPS = ['192.168.0.0/8', '127.0.0.0/2']
+    ALLOWED_IP_RANGES = ['192.168.0.0/8', '127.0.0.0/2']
 
 Regardless of the IP addresses/rages that are in the whitelist, access for all authenticated users can be allowed with ``ALLOW_AUTHENTICATED``.  If true, this will allow any valid sessions past the IP restriction.
 
